@@ -1,0 +1,10 @@
+{% extends 'portal/home.html' %}
+
+{% block body %}
+{% for job in jobs %}
+    {{ job.role }}
+    {{ job.company_name }}
+    {{ job.package }}
+</br>
+{% endfor %}
+{% endblock %}
